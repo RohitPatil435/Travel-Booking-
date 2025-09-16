@@ -1,0 +1,479 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Navbar Start */
+#navbar {
+    background: #f9f9f9;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+    padding: 10px;
+
+}
+
+#logo span {
+    color: #ff2600;
+}
+
+
+.nav-item .nav-link {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    border-radius: 3px;
+
+}
+
+.nav-item .nav-link:hover {
+    background: #ff2600;
+    color: white;
+}
+
+#navbar form button {
+    background: #ff654a;
+    color: white;
+    border: none;
+}
+
+#navbar form button:hover {
+    background: #ff2600;
+    color: white;
+    border: none;
+}
+
+/* Navbar End */
+
+
+
+
+/* end */
+
+/* Home Section */
+
+
+.welcome-section {
+    background-image: url("imgs/main-section1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.welcome-content h2 {
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+
+.welcome-content {
+    color: #ffffff;
+    font-size: 30px;
+    text-shadow: 0px 2px 2px rgb(255, 0, 0);
+}
+
+.welcome-content span h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #ffff00;
+    text-shadow: 0px 2px 2px rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+.welcome-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* end of section*/
+
+/* Start book */
+
+.book {
+    margin-top: 5px;
+    background: #ffffff;
+    padding: 50px;
+}
+
+
+.main-text h1,
+.home-packages .main-txt h1,
+.home-destinations .main-txt h1,
+.about-us .main-text h1 {
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+    padding: 25px;
+}
+
+.home-packages .main-txt h1 span,
+.main-text h1 span,
+.home-destinations .main-txt h1 .about-us .main-text h1 span {
+    color: #ff2600;
+    padding: 30px;
+
+}
+
+.book .card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book .row {
+    margin-top: 30px;
+}
+
+#book form label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+#book form button {
+
+    align-items: center;
+    margin-top: 25px;
+    background-color: rgb(255, 106, 0);
+    color: white;
+    border: none;
+}
+
+
+
+#book form button:hover {
+    background-color: red;
+    width: 100px;
+}
+
+/* responsive */
+@media (max-width:765px) {
+    .book {
+        padding: 0;
+    }
+
+    .main-text h1 {
+        padding: 20px;
+    }
+}
+
+
+/* Home Packages */
+
+section.about-us-section,
+section.home-packages-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.about-us .about-us-card,
+.home-packages .card {
+    width: 700px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+
+
+}
+
+.about-us .about-us-card img,
+.home-packages .card img {
+
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.home-packages .card .card-body h3 {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+
+.home-packages .card .card-body p {
+    font-size: 15px;
+}
+
+
+.home-packages .card .card-body h6 {
+    font-size: 20px;
+}
+
+
+
+.home-packages .button-container,
+.packages .button-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.home-packages .button-container a,
+.packages .button-container a {
+
+    color: #fff;
+    background-color: #ff654a;
+}
+
+.home-packages .button-container a:hover,
+.packages .button-container a:hover {
+
+    background: #ff2600;
+}
+
+
+
+/* Section Packages Start */
+.main-txt h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+.main-txt h1 span {
+    color: #ff2600;
+}
+
+section.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.packages .card {
+    width: 700px;
+    height: 900px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.packages .card img {
+    width: 600px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.packages .card .card-body {
+    background: transparent;
+    height: 600px;
+}
+
+.packages .card .card-body h3 {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+
+.packages .card .card-body p {
+    font-size: 15px;
+}
+
+
+.packages .card .card-body h6 {
+    font-size: 20px;
+}
+
+
+/* Destination listing Css */
+
+
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 a {
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #ae3e2a;
+}
+
+section.filters {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+section.filters h2 {
+    margin: 0 0 10px;
+    font-size: 25px;
+    color: #ff6600;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #666;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Destination */
+
+
+header {
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 a {
+
+    text-decoration: none;
+    color: #f66b52;
+}
+
+h1 a:hover {
+
+    text-decoration: none;
+    color: #fa0000;
+}
+
+
+section.filters {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+section.filters h2 {
+    margin: 0 0 10px;
+    font-size: 25px;
+    color: #ff6600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #666;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+section.destination-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.destination-card {
+    width: 700px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+
+}
+
+
+.destination-card img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.destination-card h2 {
+    margin-top: 5px;
+    padding-top: 5px;
+    font-size: 25px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.destination-card p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.destination-card p.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.filters .btn,
+.destination-card .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.filters .btn:hover,
+.destination-card .btn:hover {
+    background-color: #e64d00;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #777;
+}

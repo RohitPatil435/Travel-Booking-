@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel Destinations</title>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+</head>
+<!-- <script>
+    // Function to handle filter changes
+    function handleFilterChange() {
+        const location = document.getElementById('location').value;
+        const priceRange = document.getElementById('price-range').value;
+        const activityType = document.getElementById('activity-type').value;
+
+        // Get all destination cards
+        const destinationCards = document.querySelectorAll('.destination-card');
+
+        // Loop through each card and apply filters
+        destinationCards.forEach((card) => {
+            const cardLocation = card.getAttribute('data-location');
+            const cardPriceRange = card.getAttribute('data-price-range');
+            const cardActivityType = card.getAttribute('data-activity-type');
+
+            // Check if card matches the selected filters
+            const locationMatch = location === '' || location === cardLocation;
+            const priceRangeMatch = priceRange === '' || priceRange === cardPriceRange;
+            const activityTypeMatch =
+                activityType === '' || activityType === cardActivityType;
+
+            // Show/hide the card based on filter results
+            if (locationMatch && priceRangeMatch && activityTypeMatch) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Attach event listeners to filter elements
+    document.getElementById('location').addEventListener('change', handleFilterChange);
+    document.getElementById('price-range').addEventListener('change', handleFilterChange);
+    document.getElementById('activity-type').addEventListener('change', handleFilterChange);
+
+
+</script> -->
+
+
+<body>
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" id="logo"><span>TRAVELLER</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination_listing.html">Destinations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <header>
+        <h1><a href="#">TRAVEL DESTINATIONS</a></h1>
+    </header>
+
+    <section class="filters">
+        <h2>Filters</h2>
+        <div class="filter-group">
+            <label for="location">Location:</label>
+            <select id="location">
+                <option value="">All</option>
+                <option value="beach">Beach</option>
+                <option value="mountain">Mountain</option>
+                <option value="city">City</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="price-range">Price Range:</label>
+            <select id="price-range">
+                <option value="">All</option>
+                <option value="budget">Budget</option>
+                <option value="mid-range">Mid-Range</option>
+                <option value="luxury">Luxury</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="activity-type">Activity Type:</label>
+            <select id="activity-type">
+                <option value="">All</option>
+                <option value="adventure">Adventure</option>
+                <option value="relaxation">Relaxation</option>
+                <option value="sightseeing">Sightseeing</option>
+            </select>
+        </div>
+
+        <a href="#" class="btn">Apply</a>
+    </section>
+    <div>
+        <section class="destination-list">
+            <div class="destination-card">
+                <img src="imgs/manali-img.jpg" alt="Manali">
+                <h2>Manali</h2>
+                <p>Manali, nestled in the majestic Himalayas, captivates with its breathtaking landscapes,
+                    offering a serene escape for nature lovers and adventure seekers alike.</p>
+                <p>This scenic town
+                    in India entices visitors with its snow-capped peaks, lush valleys, and a vibrant blend
+                    of local culture and warm hospitality.</p>
+                <p class="price">Starting from Rs.7,500</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+
+            <div class="destination-card">
+                <img src="imgs/Leh-Ladakh.jpg" alt="Leh-Ladakh">
+                <h2>Leh-Ladakh</h2>
+                <p>Leh Ladakh, a land of rugged beauty and spiritual allure, beckons with its awe-inspiring
+                    landscapes, including towering mountains, turquoise lakes, and ancient monasteries. </p>
+                <p>This remote region in India's northernmost reaches offers an unforgettable journey, immersing
+                    travelers in a world of tranquility and natural grandeur.</p>
+                <p class="price">Starting from Rs.8,000</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+
+            <div class="destination-card">
+                <img src="imgs/Andaman-island-img.jpg" alt="Andaman-island">
+                <h2>Andaman Island</h2>
+                <p>An exotic tropical paradise in the Bay of Bengal, enthralls with its
+                    pristine white sandy beaches, crystal-clear turquoise waters, and vibrant coral reefs.</p>
+                <p> This idyllic destination offers a perfect blend of relaxation, adventure, and underwater
+                    exploration, making it a dream destination for beach lovers and diving enthusiasts.</p>
+                <p class="price">Starting from Rs.15,000</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+
+            <div class="destination-card">
+                <img src="imgs/Goa-img.jpg" alt="Goa">
+                <h2>Goa</h2>
+                <p>A coastal paradise on India's western shores, enchants with its golden beaches,
+                    vibrant nightlife charm.</p>
+                <p> This tropical haven invites visitors to indulge in sun-kissed days, water sports adventures, and a
+                    laid-back atmosphere,creating a perfect blend of relaxation and excitement by the Arabian Sea.</p>
+                <p class="price">Starting from Rs.5,000</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+
+            <div class="destination-card">
+                <img src="imgs/kanyakumari-img.jpg" alt="kanyakumari">
+                <h2>Kanyakumari</h2>
+                <p>Kanyakumari, where the Arabian Sea, Bay of Bengal, and Indian Ocean meet, unveils a
+                    breathtaking confluence of waters, accompanied by stunning sunrises and sunsets. </p>
+                <p>This southernmost tip of India is a captivating destination, where spirituality, natural beauty, and
+                    cultural richness converge in harmony.</p>
+                <p class="price">Starting from Rs,6,5000</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+
+            <div class="destination-card">
+                <img src="imgs/Nainital-img.cms" alt="Nainital">
+                <h2>Nainital</h2>
+                <p>Nestled amidst the picturesque Kumaon Hills,shimmering emerald lake, verdant forests, and
+                    panoramic mountain views. </p>
+                <p>This enchanting hill station in India offers a serene retreat, where one can embrace tranquility,
+                    explore
+                    quaint markets, and embark on boat rides, creating lasting memories in the lap of nature.</p>
+                <p class="price">Starting from Rs.8,500</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+
+
+            <!-- Add more destination cards here -->
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 TRAVELLER. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
